@@ -1,35 +1,40 @@
 # Netflix-Data-Analysis
-# Objective
-# This project analyzes Netflix stock data to explore:
+# 📊 Netflix Exploratory Data Analysis (EDA)
 
-#Volume of stock traded
-#Netflix stock price trends (High, Open, and Close prices)
-#Netflix stock price patterns by day, month, and year
-#Top 5 dates with the highest stock price
-#Top 5 dates with the lowest stock price
-#Getting Started
+## 🔥 Overview
+This project performs an **Exploratory Data Analysis (EDA)** on Netflix's dataset to uncover insights about its content library, trends, and patterns over time. The analysis includes visualizations, data preprocessing, and insights into popular genres, production countries, and release trends.
 
-# To run this analysis, ensure you have the necessary Python libraries installed:
+## 📁 Dataset Information
+- **Source:** [Kaggle Netflix Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows)
+- **Columns Included:**
+  - `show_id`: Unique ID for each title.
+  - `type`: Movie or TV Show.
+  - `title`: Title of the content.
+  - `director`: Director(s) of the title.
+  - `cast`: Main actors involved.
+  - `country`: Country where the content was produced.
+  - `date_added`: Date it was added to Netflix.
+  - `release_year`: Original release year.
+  - `rating`: Age rating.
+  - `duration`: Length of the movie/show.
+  - `listed_in`: Genre categories.
+  - `description`: Short summary of the content.
 
-pip install pandas matplotlib seaborn
+## 🛠️ Technologies Used
+- **Python** (Pandas, NumPy, Matplotlib, Seaborn, Plotly)
+- **Jupyter Notebook**
+- **Data Cleaning & Visualization**
 
-# Dataset
-The analysis is based on Netflix's historical stock data. The dataset is loaded as follows:
+## 🔍 Key Analysis & Insights
+✅ Distribution of Movies vs. TV Shows  
+✅ Most Popular Genres on Netflix  
+✅ Trends in Content Releases Over the Years  
+✅ Top Contributing Countries to Netflix Content  
+✅ Analysis of Movie Durations & TV Show Seasons  
 
-import pandas as pd
-df = pd.read_csv("Netflix stock dataset.csv")
-df.head()
+## 📊 Visualizations
+Here are some key visualizations from the analysis:
+- **Content Distribution Over the Years** 📈
+- **Top 10 Most Frequent Genres** 🎭
+- **Country-wise Content Production** 🌍
 
-# Key Steps in Analysis
-#Data preprocessing and conversion of dates
-#Visualizing stock price trends
-#Identifying patterns in trading volume
-#Extracting highest and lowest stock price dates
-
-# Sample Code
-import seaborn as sns
-sns.set(rc={'figure.figsize': (10,5)})
-df['Date'] = pd.to_datetime(df['Date'])  
-
-# Results
-The analysis provides insights into stock trends, trading volumes, and significant price movements.
